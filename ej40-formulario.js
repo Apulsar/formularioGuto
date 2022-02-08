@@ -1,35 +1,21 @@
-function validator(){
-    let nombre=document.querySelector("#nombre").value;
-    let apellido=document.querySelector("#apellido").value;
-    let pass1=document.querySelector("#pass1").value;
-    let pass2=document.querySelector("#pass2").value;
-    document.querySelector("#E0").innerHTML="";
-    document.querySelector("#E1").innerHTML="";
-    document.querySelector("#E2").innerHTML="";
+function valorator(){
+var sliderValue=document.getElementById('Valoracion').value
+alert("Has valorado con "+sliderValue+" puntos")
+}
+document.querySelector("#Valoration").addEventListener("click",valorator);
 
-    try{
-    if (nombre.length<3){
-        throw "E0";
-    }
-    if(apellido==null){
-        throw "E1";
-    }
-    if(pass1!=pass2){
-        throw "E2";
+function bankAccount(){
+    var IBAN =document.getElementById('IBAN').value
+    var Entidad =document.getElementById('Entidad').value
+    var Sucursal =document.getElementById('Sucursal').value
+    var DC =document.getElementById('DC').value
+    var Cuenta =document.getElementById('Cuenta').value
+    if(IBAN==""||Entidad==""||Sucursal==""||DC==""||Cuenta==""){
+        alert("Por favor rellene todos los campos indicados para poder ver su número de cuenta")
+    }else if(IBAN.length!=2||Entidad.length!=4||Sucursal.length!=4||DC.length!=2||Cuenta.length!=10){
+        alert("Por favor rellene los campos de acuerdo al patrón indicado para poder ver su numero de cuenta")
+    }else{
+    alert("Le informamos que su cuenta bancaria es ES"+IBAN+"-"+Entidad+"-"+Sucursal+"-"+DC+"-"+Cuenta)
     }
 }
-    catch(e){
-        switch(e){
-        case "E0":
-        return document.querySelector("#E0").innerHTML+="El nombre tiene que tener al menos 3 caracteres. ";
-        
-        case "E1":
-        return  document.querySelector("#E1").innerHTML+=("El apellido no puede estar vacío. ");
-        
-        case "E2":
-        return document.querySelector("#E2").innerHTML+=("Las dos contraseñas no coinciden. ");    }
-        
-    }
-
-}
-document.querySelector("#submit").addEventListener("click",validator);
+document.querySelector("#Account").addEventListener("click",bankAccount);

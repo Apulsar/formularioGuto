@@ -31,9 +31,11 @@
             <fieldset>
                 <legend>Tipo de Contratación</legend>
                 <div class="radioButtons">
-                    <input type="radio" name="contrato" id="newCont" checked><label for="newCont">Nueva Contratación</label>
+                    <input type="radio" name="contrato" id="newCont" checked><label for="newCont">Nueva
+                        Contratación</label>
                     <input type="radio" name="contrato" id="portabilidad"><label for="portabilidad">Portabilidad</label>
-                    <input type="radio" name="contrato" id="cambioCont"> <label for="cambioCont">Cambio de contrato</label><br><br>
+                    <input type="radio" name="contrato" id="cambioCont"> <label for="cambioCont">Cambio de
+                        contrato</label><br><br>
                 </div>
                 <label for="compActual">Elija la compañía actual: </label><select name="compActual" id="compActual">
                     <option value="Movistar">Movistar</option>
@@ -42,7 +44,8 @@
                     <option value="Yoigo">Yoigo</option>
                     <option value="noComp">No Tengo Nignuna Compañía</option>
                 </select>
-                <label for="compPort">En caso de portabilidad, elija la nueva compañía</label> <select name="compPort" id="compPort">
+                <label for="compPort">En caso de portabilidad, elija la nueva compañía</label> <select name="compPort"
+                    id="compPort">
                     <option value="Movistar">Movistar</option>
                     <option value="Orange">Orange</option>
                     <option value="Vodafone">Vodafone</option>
@@ -55,33 +58,41 @@
                 <label for="pais">Pais</label>
                 <input type="text" name="pais" id="pais" readonly value="ES">(solo válido ES)<br>
                 <label for="IBAN">Control IBAN</label>
-                <input name="IBAN" id="IBAN" required maxlength="2" placeholder="XX"></input>(dos dígitos)<br>
+                <input name="IBAN" id="IBAN" required length="2" placeholder="XX"></input>(dos dígitos)<br>
                 <label for="Entidad">Entidad</label>
-                <input name="Entidad" id="Entidad" required maxlength="4" placeholder="XXXX">(cuatro dígitos)</input><br>
+                <input name="Entidad" id="Entidad" required length="4" placeholder="XXXX">(cuatro
+                dígitos)</input><br>
                 <label for="Sucursal">Sucursal</label>
-                <input name="Sucursal" id="Sucursal" required maxlength="4" placeholder="XXXX">(cuatro dígitos)</input><br>
+                <input name="Sucursal" id="Sucursal" required length="4" placeholder="XXXX">(cuatro
+                dígitos)</input><br>
                 <label for="DC">DC</label>
-                <input name="DC" id="DC" required maxlength="2" placeholder="XX">(dos dígitos)</input><br>
+                <input name="DC" id="DC" required length="2" placeholder="XX">(dos dígitos)</input><br>
                 <label for="Cuenta">Cuenta</label>
-                <input name="Cuenta" id="Cuenta" required maxlength="10" placeholder="XXXXXXXXXX">(diez dígitos)</input><br>
+                <input name="Cuenta" id="Cuenta" required length="10" placeholder="XXXXXXXXXX">(diez
+                dígitos)</input><br>
 
             </fieldset>
             <fieldset>
                 <legend>Datos Estadísticos-¿Cómo nos conoció?</legend>
-                    <input type="checkbox" name="info" id="TV" ><label for="TV">A través de la TV</label><br>
-                    <input type="checkbox" name="info" id="radio"><label for="radio">A través de la radio</label><br>
-                    <input type="checkbox" name="info" id="Internet"> <label for="Internet">A través de la Internet</label><br><br>
+                <input type="checkbox" name="info" id="TV"><label for="TV">A través de la TV</label><br>
+                <input type="checkbox" name="info" id="radio"><label for="radio">A través de la radio</label><br>
+                <input type="checkbox" name="info" id="Internet"> <label for="Internet">A través de la
+                    Internet</label><br><br>
 
-                    <input type="range" id="Valoracion" name="Valoracion" min="0" max="5" step="1">
-                    <label for="Valoracion">Valoracion [1-5]</label><br>
+                <input type="range" id="Valoracion" name="Valoracion" min="0" max="5" step="1">
+                <label for="Valoracion">Valoracion [1-5]</label><br>
 
-                    <label for="Fecha">Fecha de la Encuesta:</label>
-                    <input type="date" name="Fecha" id="Fecha" value="2019-01-01">
-                
+                <label for="Fecha">Fecha de la Encuesta:</label>
+                <input type="date" name="Fecha" id="Fecha" value="2019-01-01">
+
             </fieldset>
-
-            <div class="enviar"><input type="submit" value="Enviar"></div>
-
+            <br>
+            <input type="submit" value="Enviar Datos">
+            <input type="reset" value="Borrar Datos"><br>
+            <div class="actionButton">
+                <input type="button" value="Mostrar Valoración" id="Valoration" name="Valoration">
+                <input type="button" value="Mostrar Cuenta" id="Account" name="Account">
+            </div>
         </form>
     </div>
 
