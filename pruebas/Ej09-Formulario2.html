@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ej08-EstiloFormularios.css">
+</head>
+
+<body>
+    <h1>Información sobre el producto</h1>
+    <div class="container2">
+    <form action="#" method="get">
+    <fieldset>
+        <legend>Datos básicos</legend>
+
+        <label for="nombre">Nombre</label> <br>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+        <label for="descripcion">Descripción</label> <br>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="7"></textarea><br><br>
+        <label for="foto">Foto</label> <input type="file" name="foto" id="foto"> <br><br>
+        <input type="checkbox" required name="visitas" id="visitas"> <label for="visitas">Añadir contador de
+                visitas</label> <br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Datos económicos</legend>
+
+        <label for="precio">Precio </label><input type="number" name="precio" id="precio"> €
+            <label for="impuestos">Impuestos</label> <select name="impuestos" id="impuestos">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select><br><br>
+        Promoción <br>
+        <input type="radio" name="promo" id="promo0" checked><label for="promo0">Ninguno</label><br>
+        <input type="radio" name="promo" id="promo1"><label for="promo1">Transporte
+                gratuito</label><br>
+        <input type="radio" name="promo" id="promo2"> <label for="promo2">Descuento 5%</label><br>
+
+    </fieldset>
+    <div class="enviar"><input type="submit" value="Enviar"></div>
+    
+    </form>
+</div>
+</body>
+
+</html>

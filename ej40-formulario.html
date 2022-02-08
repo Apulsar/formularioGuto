@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario-estilos.css">
+</head>
+
+<body>
+    <h1>Formulario información Alta Telefónica</h1>
+    <div class="container2">
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" required maxlength="30"><br>
+                <label for="Apellidos">Apellidos</label>
+                <input name="Apellidos" id="Apellidos" required maxlength="60"></input><br>
+                <label for="Direccion">Dirección</label>
+                <input name="Direccion" id="Direccion" required maxlength="60"></input><br>
+                <label for="CP">Código Postal</label>
+                <input name="CP" id="CP" required></input><br>
+                <label for="Localidad">Localidad</label>
+                <input name="Localidad" id="Localidad" required></input><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Tipo de Contratación</legend>
+                <div class="radioButtons">
+                    <input type="radio" name="contrato" id="newCont" checked><label for="newCont">Nueva Contratación</label>
+                    <input type="radio" name="contrato" id="portabilidad"><label for="portabilidad">Portabilidad</label>
+                    <input type="radio" name="contrato" id="cambioCont"> <label for="cambioCont">Cambio de contrato</label><br><br>
+                </div>
+                <label for="compActual">Elija la compañía actual: </label><select name="compActual" id="compActual">
+                    <option value="Movistar">Movistar</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Vodafone">Vodafone</option>
+                    <option value="Yoigo">Yoigo</option>
+                    <option value="noComp">No Tengo Nignuna Compañía</option>
+                </select>
+                <label for="compPort">En caso de portabilidad, elija la nueva compañía</label> <select name="compPort" id="compPort">
+                    <option value="Movistar">Movistar</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Vodafone">Vodafone</option>
+                    <option value="Yoigo">Yoigo</option>
+                </select><br>
+            </fieldset>
+            <fieldset>
+                <legend>Datos Bancarios</legend>
+
+                <label for="pais">Pais</label>
+                <input type="text" name="pais" id="pais" readonly value="ES">(solo válido ES)<br>
+                <label for="IBAN">Control IBAN</label>
+                <input name="IBAN" id="IBAN" required maxlength="2" placeholder="XX"></input>(dos dígitos)<br>
+                <label for="Entidad">Entidad</label>
+                <input name="Entidad" id="Entidad" required maxlength="4">(cuatro dígitos)</input><br>
+                <label for="CP">Código Postal</label>
+                <input name="CP" id="CP" required></input><br>
+                <label for="Localidad">Localidad</label>
+                <input name="Localidad" id="Localidad" required></input><br>
+
+            </fieldset>
+
+            <div class="enviar"><input type="submit" value="Enviar"></div>
+
+        </form>
+    </div>
+
+    <script src="ej40-formulario.js"></script>
+</body>
+
+</html>

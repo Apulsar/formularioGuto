@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ej08-EstiloFormularios.css">
+</head>
+
+<body>
+    <h1>Datos para alta usuarios</h1>
+    <div class="container">
+        <fieldset>
+    <form action="#" method="get">
+           
+        <div><label for="nombre">Indica tu nombre</label></div>
+        <div><input type="text" name="nombre" id="nombre" required></div>
+        <div><label for="apellido">Indica tu apellido</label></div>
+        <div><input type="text" name="apellido" id="apellido" required></div>
+        <div><label for="password">Contraseña</label></div>
+        <div><input type="password" name="password" id="password" pattern=".{8,}" placeholder="8 caracteres al menos"
+                required></div>
+        <div><label for="nacimiento">Indica tu fecha de nacimiento</label></div>
+        <div><input type="date" name="nacimiento" id="nacimiento" required></div>
+        <div><label for="mail">Correo electrónico</label></div>
+        <div><input type="email" name="mail" id="mail" required></div>
+        <div><label for="personalweb">Página web personal</label></div>
+        <div><input type="url" name="personalweb" id="personalweb" required></div>
+        <div><label for="telefono">Teléfono móvil (Formato xxx-xxx-xxx)</label></div>
+        <div><input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                placeholder="Formato xxx-xxx-xxx" required></div>
+        <div>Sexo</div>
+        <div><input type="radio" name="sexo" id="hombre"><label for="hombre">Hombre</label></div>
+        <div><input type="radio" name="sexo" id="mujer"><label for="mujer">Mujer</label></div>
+        <div><input type="radio" name="sexo" id="otro"><label for="otro">Otro</label></div>
+        <div><input type="radio" name="sexo" id="PrefieroNoResponder" checked><label for="PrefieroNoResponder">Prefiero
+                no responder</label></div>
+        <div><label for="foto">Incluir mi foto</label> <input type="file" name="foto" id="foto"> </div>
+        <div><input type="checkbox" checked name="suscripción" id="suscripcion"> <label for="suscripcion">Suscribirme al
+                boletín de noticias</label> </div>
+        <div><input type="submit" value="Guardar cambios" name="guardar" id="guardar"> <input type="reset"
+                value="Borrar los datos itroducidos" name="borrar" id="borrar"></div>
+
+        
+
+    </form>
+</fieldset>
+</div>
+</body>
+
+</html>
