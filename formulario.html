@@ -19,13 +19,15 @@
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" required maxlength="30"><br>
                 <label for="Apellidos">Apellidos</label>
-                <input name="Apellidos" id="Apellidos" required maxlength="60"></input><br>
+                <input type="text" name="Apellidos" id="Apellidos" required maxlength="60"></input><br>
                 <label for="Direccion">Dirección</label>
-                <input name="Direccion" id="Direccion" required maxlength="60"></input><br>
+                <input type="text" name="Direccion" id="Direccion" required maxlength="60"></input><br>
                 <label for="CP">Código Postal</label>
-                <input name="CP" id="CP" required></input><br>
+                <input type="text" name="CP" id="CP" required maxlength="5" minlength="5"></input><span id="cpMsg" name="cpMsg"></span><br>
+                <label for="Provincia">Provincia</label>
+                <input type="text" name="Provincia" id="Provincia" required></input>Introduzca el nombre sin tildes y sin ñ (use nh en su lugar)<br>
                 <label for="Localidad">Localidad</label>
-                <input name="Localidad" id="Localidad" required></input><br>
+                <input type="text" name="Localidad" id="Localidad" required></input><br>
 
             </fieldset>
             <fieldset>
@@ -58,17 +60,17 @@
                 <label for="pais">Pais</label>
                 <input type="text" name="pais" id="pais" readonly value="ES">(solo válido ES)<br>
                 <label for="IBAN">Control IBAN</label>
-                <input name="IBAN" id="IBAN" required length="2" placeholder="XX"></input>(dos dígitos)<br>
+                <input name="IBAN" id="IBAN" required maxlength="2" placeholder="XX"></input>(dos dígitos)<br>
                 <label for="Entidad">Entidad</label>
-                <input name="Entidad" id="Entidad" required length="4" placeholder="XXXX">(cuatro
+                <input name="Entidad" id="Entidad" required maxlength="4" placeholder="XXXX">(cuatro
                 dígitos)</input><br>
                 <label for="Sucursal">Sucursal</label>
-                <input name="Sucursal" id="Sucursal" required length="4" placeholder="XXXX">(cuatro
+                <input name="Sucursal" id="Sucursal" required maxlength="4" placeholder="XXXX">(cuatro
                 dígitos)</input><br>
                 <label for="DC">DC</label>
-                <input name="DC" id="DC" required length="2" placeholder="XX">(dos dígitos)</input><br>
+                <input name="DC" id="DC" required maxlength="2" placeholder="XX">(dos dígitos)</input><br>
                 <label for="Cuenta">Cuenta</label>
-                <input name="Cuenta" id="Cuenta" required length="10" placeholder="XXXXXXXXXX">(diez
+                <input name="Cuenta" id="Cuenta" required maxlength="10" placeholder="XXXXXXXXXX">(diez
                 dígitos)</input><br>
 
             </fieldset>
@@ -92,6 +94,8 @@
             <div class="actionButton">
                 <input type="button" value="Mostrar Valoración" id="Valoration" name="Valoration">
                 <input type="button" value="Mostrar Cuenta" id="Account" name="Account">
+                <input type="button" value="Mostrar Día Semana" id="weekday" name="weekday">
+                <input type="button" value="Validar código postal" id="postalCode" name="postalCode">
             </div>
         </form>
     </div>
