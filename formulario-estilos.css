@@ -112,6 +112,12 @@ input[type=range] {
   input[type=range]:focus::-ms-fill-upper {
     background: #367ebd;
   }
-  input[type=date]{
+input[type=date]{
       background-color: #ffffff;
   }
+.actionButton input[type=button]{
+    background-color: lightcoral;
+    border-style: none;
+    box-shadow: 1px 1px grey;
+    border-radius: 1px;
+}
